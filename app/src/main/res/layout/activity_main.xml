@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="#42A8D6"
+        android:text="SIGNUP PAGE"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="333dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="202dp"
+            android:layout_height="46dp"
+            android:background="#D19090"
+            android:backgroundTint="#FDAAAA"
+            android:ems="10"
+            android:hint="USERNAME"
+            android:inputType="textPersonName"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <EditText
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/password"
+            android:layout_width="201dp"
+            android:layout_height="41dp"
+            android:background="#FAA5A5"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:hint="PASSWORD"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="201dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="32dp"
+            android:background="#FB9D9D"
+            android:ems="10"
+            android:hint="RETYPE PASSWORD"
+            android:inputType="textPersonName"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/EmailAddress"
+            android:layout_width="201dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="24dp"
+            android:background="#EF9797"
+            android:ems="10"
+            android:hint="email id"
+            android:inputType="textEmailAddress"
+            android:text="@gmail.com" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="131dp"
+            android:layout_height="74dp"
+            android:background="#673AB7"
+            android:text="REGISTER"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:id="@+id/btnsignin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:background="#8BC34A"
+            android:text="EXISTING USERS GO ON SIGN IN PAGE"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
